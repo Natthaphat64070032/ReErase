@@ -1,7 +1,7 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-IOError: Couldn't find file 'A Corner of Memories.mp3'.
+IOError: Couldn't find file 'audio/A Corner of Memories.ogg'.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -20,10 +20,8 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "E:\VN\renpy-7.4.9-sdk/renpy/display/core.py", line 3315, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
-  File "E:\VN\renpy-7.4.9-sdk/renpy/display/core.py", line 3771, in interact_core
-    renpy.audio.audio.interact()
-  File "E:\VN\renpy-7.4.9-sdk/renpy/audio/audio.py", line 1209, in interact
-    periodic()
+  File "E:\VN\renpy-7.4.9-sdk/renpy/display/core.py", line 4020, in interact_core
+    renpy.audio.audio.periodic()
   File "E:\VN\renpy-7.4.9-sdk/renpy/audio/audio.py", line 1162, in periodic
     raise_(exc[0], exc[1], exc[2])
   File "E:\VN\renpy-7.4.9-sdk/renpy/audio/audio.py", line 1140, in periodic_thread_main
@@ -36,9 +34,9 @@ Full traceback:
     rv = renpy.loader.load(fn)
   File "E:\VN\renpy-7.4.9-sdk/renpy/loader.py", line 798, in load
     raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'A Corner of Memories.mp3'.
+IOError: Couldn't find file 'audio/A Corner of Memories.ogg'.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.10.2178
 ReErase 1.0
-Mon Nov  8 17:34:45 2021
+Mon Nov  8 18:22:09 2021
