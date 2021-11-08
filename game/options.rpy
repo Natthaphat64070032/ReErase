@@ -128,7 +128,7 @@ default preferences.text_cps = 0
 ## to 30 being the valid range.
 
 default preferences.afm_time = 15
-
+define config.main_menu_music = "audio/A Corner of Memories.mp3"
 
 ## Save directory ##############################################################
 ##
