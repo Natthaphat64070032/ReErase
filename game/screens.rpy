@@ -155,7 +155,7 @@ style say_label:
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
-
+    line_spacing 15
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
