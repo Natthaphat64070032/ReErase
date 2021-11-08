@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/options.rpy", line 131: expected statement.
-    config.main_menu_music = "A Corner of Memories.mp3"
-                           ^
+File "game/script.rpy", line 17: expected 'image_name_component' not found.
+    scene = bg room
+          ^
 
 Ren'Py Version: Ren'Py 7.4.10.2178
-Mon Nov  8 17:34:06 2021
+Mon Nov  8 19:45:05 2021
