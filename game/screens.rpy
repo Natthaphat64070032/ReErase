@@ -1040,13 +1040,7 @@ screen keyboard_help():
         label "S"
         text _("Takes a screenshot.")
 
-    hbox:
-        label "V"
-        text _("Toggles assistive {a=https://www.renpy.org/l/voicing}self-voicing{/a}.")
 
-    hbox:
-        label "Shift+A"
-        text _("Opens the accessibility menu.")
 
 
 screen mouse_help():
