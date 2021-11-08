@@ -93,7 +93,7 @@ define gui.game_menu_background = "gui/game_menu.png"
 ##
 ## These variables control how dialogue is displayed on the screen one line at a
 ## time.
-define line_spacing = 20
+
 ## The height of the textbox containing dialogue.
 define gui.textbox_height = 185
 
