@@ -1,0 +1,44 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+IOError: Couldn't find file 'A Corner of Memories.mp3'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "E:\VN\renpy-7.4.9-sdk/renpy/ast.py", line 928, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\VN\renpy-7.4.9-sdk/renpy/python.py", line 2245, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "E:\VN\renpy-7.4.9-sdk/renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "E:\VN\renpy-7.4.9-sdk/renpy/display/core.py", line 3315, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "E:\VN\renpy-7.4.9-sdk/renpy/display/core.py", line 3771, in interact_core
+    renpy.audio.audio.interact()
+  File "E:\VN\renpy-7.4.9-sdk/renpy/audio/audio.py", line 1209, in interact
+    periodic()
+  File "E:\VN\renpy-7.4.9-sdk/renpy/audio/audio.py", line 1162, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "E:\VN\renpy-7.4.9-sdk/renpy/audio/audio.py", line 1140, in periodic_thread_main
+    periodic_pass()
+  File "E:\VN\renpy-7.4.9-sdk/renpy/audio/audio.py", line 1082, in periodic_pass
+    c.periodic()
+  File "E:\VN\renpy-7.4.9-sdk/renpy/audio/audio.py", line 518, in periodic
+    topf = load(filename)
+  File "E:\VN\renpy-7.4.9-sdk/renpy/audio/audio.py", line 69, in load
+    rv = renpy.loader.load(fn)
+  File "E:\VN\renpy-7.4.9-sdk/renpy/loader.py", line 798, in load
+    raise IOError("Couldn't find file '%s'." % name)
+IOError: Couldn't find file 'A Corner of Memories.mp3'.
+
+Windows-10-10.0.19041
+Ren'Py 7.4.10.2178
+ReErase 1.0
+Mon Nov  8 17:34:45 2021
