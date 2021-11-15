@@ -301,17 +301,17 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("เริ่มเกม") action Start()
 
         else:
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("บทสนทนา") action ShowMenu("history")
 
-            textbutton _("Save") action ShowMenu("save")
+            textbutton _("บันทึก") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("โหลดบันทึก") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("การตั้งค่า") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -319,9 +319,9 @@ screen navigation():
 
         elif not main_menu:
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("เมนูหลัก") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        textbutton _("เกี่ยวกับเรา") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -563,8 +563,11 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
-
+            text _("นายณัฐภัทร บำรุงชู 64070032")
+            text _("นายพงศ์ภัค ตั้งประกอบ 64070069")
+            text _("นางสาวณัฐพร เกษมสุข 64070030")
+            text _("นายชาญณรงค์ มากมณี 64070141")
+            text _("นายภาคิณ กีรติภักดีพงศ์ 64070206")
 
 style about_label is gui_label
 style about_label_text is gui_label_text
