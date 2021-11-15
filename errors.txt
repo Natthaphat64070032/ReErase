@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 17: expected 'image_name_component' not found.
-    scene = bg room
-          ^
+File "game/script.rpy", line 35: stop requires a channel
+    stop scene
+        ^
 
 Ren'Py Version: Ren'Py 7.4.10.2178
-Mon Nov  8 19:45:05 2021
+Mon Nov 15 23:45:29 2021

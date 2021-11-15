@@ -326,13 +326,13 @@ screen navigation():
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("ช่วยเหลือ") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("ออกจากเกม") action Quit(confirm=not main_menu)
 
 
 style navigation_button is gui_button
@@ -473,7 +473,7 @@ screen game_menu(title, scroll=None, yinitial=0.0):
 
     use navigation
 
-    textbutton _("Return"):
+    textbutton _("ย้อนกลับ"):
         style "return_button"
 
         action Return()
@@ -719,7 +719,7 @@ screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("การตั้งค่า"), scroll="viewport"):
 
         vbox:
 
@@ -736,10 +736,10 @@ screen preferences():
 
                 vbox:
                     style_prefix "radio"
-                    label _("Rollback Side")
-                    textbutton _("Disable") action Preference("rollback side", "disable")
-                    textbutton _("Left") action Preference("rollback side", "left")
-                    textbutton _("Right") action Preference("rollback side", "right")
+                    label _("ด้านการย้อนกลับ")
+                    textbutton _("ปิด") action Preference("rollback side", "disable")
+                    textbutton _("ทางซ้าย") action Preference("rollback side", "left")
+                    textbutton _("ทางขวา") action Preference("rollback side", "right")
 
                 vbox:
                     style_prefix "check"
@@ -759,25 +759,25 @@ screen preferences():
 
                 vbox:
 
-                    label _("Text Speed")
+                    label _("ความเร็วข้อความ")
 
                     bar value Preference("text speed")
 
-                    label _("Auto-Forward Time")
+                    label _("ระยะเวลาเลือนข้อความอัตโนมัติ")
 
                     bar value Preference("auto-forward time")
 
                 vbox:
 
                     if config.has_music:
-                        label _("Music Volume")
+                        label _("เสียงเพลง")
 
                         hbox:
                             bar value Preference("music volume")
 
                     if config.has_sound:
 
-                        label _("Sound Volume")
+                        label _("เสียงประกอบ")
 
                         hbox:
                             bar value Preference("sound volume")
@@ -787,7 +787,7 @@ screen preferences():
 
 
                     if config.has_voice:
-                        label _("Voice Volume")
+                        label _("เสียงพูด")
 
                         hbox:
                             bar value Preference("voice volume")
@@ -798,7 +798,7 @@ screen preferences():
                     if config.has_music or config.has_sound or config.has_voice:
                         null height gui.pref_spacing
 
-                        textbutton _("Mute All"):
+                        textbutton _("ปิดเสียงทั้งหมด"):
                             action Preference("all mute", "toggle")
                             style "mute_all_button"
 
@@ -1005,43 +1005,43 @@ screen keyboard_help():
 
     hbox:
         label _("Enter")
-        text _("Advances dialogue and activates the interface.")
+        text _("ไปข้อความไปข้างหน้าและใช้งานหน้าจอ Interface")
 
     hbox:
         label _("Space")
-        text _("Advances dialogue without selecting choices.")
+        text _("ไปข้อความไปข้างหน้าโดยไม่เลือกทางเลือก")
 
     hbox:
         label _("Arrow Keys")
-        text _("Navigate the interface.")
+        text _("ควบคุมหน้าต่างการใช้งาน")
 
     hbox:
         label _("Escape")
-        text _("Accesses the game menu.")
+        text _("เข้าถึงเมนูใช้งานของเกม")
 
     hbox:
         label _("Ctrl")
-        text _("Skips dialogue while held down.")
+        text _("กดค้างเพื่อข้ามบทพูด")
 
     hbox:
         label _("Tab")
-        text _("Toggles dialogue skipping.")
+        text _("กดเปิดเพื่อข้ามบทพูด")
 
     hbox:
         label _("Page Up")
-        text _("Rolls back to earlier dialogue.")
+        text _("ย้อนกลับไปบทพูดก่อนหน้า")
 
     hbox:
         label _("Page Down")
-        text _("Rolls forward to later dialogue.")
+        text _("ไปบทพูดถัดไป")
 
     hbox:
         label "H"
-        text _("Hides the user interface.")
+        text _("ซ่อนเมนูแสดงผลผู้ใช้")
 
     hbox:
         label "S"
-        text _("Takes a screenshot.")
+        text _("ถ่ายรูปภาพ Screenshot")
 
 
 
@@ -1049,54 +1049,54 @@ screen keyboard_help():
 screen mouse_help():
 
     hbox:
-        label _("Left Click")
-        text _("Advances dialogue and activates the interface.")
+        label _("คลิ้กซ้าย")
+        text _("ไปข้อความไปข้างหน้าและใช้งานหน้าจอ Interface")
 
     hbox:
-        label _("Middle Click")
-        text _("Hides the user interface.")
+        label _("ปุ่มเมาส์กลาง")
+        text _("ซ่อนเมนูแสดงผลผู้ใช้")
 
     hbox:
-        label _("Right Click")
-        text _("Accesses the game menu.")
+        label _("คลิ้กขวา")
+        text _("เข้าถึงเมนูใช้งานของเกม")
 
     hbox:
-        label _("Mouse Wheel Up\nClick Rollback Side")
-        text _("Rolls back to earlier dialogue.")
+        label _("เลื่อนวงล้อเมาส์ขึ้น")
+        text _("ย้อนกลับไปบทพูดก่อนหน้า")
 
     hbox:
-        label _("Mouse Wheel Down")
-        text _("Rolls forward to later dialogue.")
+        label _("เลื่อนวงล้อเมาส์ลง")
+        text _("ไปบทพูดถัดไป")
 
 
 screen gamepad_help():
 
     hbox:
-        label _("Right Trigger\nA/Bottom Button")
-        text _("Advances dialogue and activates the interface.")
+        label _("ปุ่มR2 หรือ Right Trigger\nA/Bottom Button")
+        text _("ไปข้อความไปข้างหน้าและใช้งานหน้าจอ Interface")
 
     hbox:
-        label _("Left Trigger\nLeft Shoulder")
-        text _("Rolls back to earlier dialogue.")
+        label _("ปุ่มL2\nLeft Shoulder")
+        text _("ย้อนกลับไปบทพูดก่อนหน้า")
 
     hbox:
-        label _("Right Shoulder")
-        text _("Rolls forward to later dialogue.")
+        label _("ปุ่ม R1\nRight Shoulder")
+        text _("ไปบทพูดถัดไป")
 
 
     hbox:
-        label _("D-Pad, Sticks")
-        text _("Navigate the interface.")
+        label _("D-Pad, ก้านควบคุม")
+        text _("ควบคุมหน้าต่างการใช้งาน")
 
     hbox:
         label _("Start, Guide")
-        text _("Accesses the game menu.")
+        text _("เข้าถึงเมนูใช้งานของเกม")
 
     hbox:
         label _("Y/Top Button")
-        text _("Hides the user interface.")
+        text _("ซ่อนเมนูแสดงผลผู้ใช้")
 
-    textbutton _("Calibrate") action GamepadCalibrate()
+    textbutton _("ปรับการควบคุม(Calibrate)") action GamepadCalibrate()
 
 
 style help_button is gui_button
