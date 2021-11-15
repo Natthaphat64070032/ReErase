@@ -730,9 +730,9 @@ screen preferences():
 
                     vbox:
                         style_prefix "radio"
-                        label _("Display")
-                        textbutton _("Window") action Preference("display", "window")
-                        textbutton _("Fullscreen") action Preference("display", "fullscreen")
+                        label _("รูปแบบการแสดงผล")
+                        textbutton _("แสดงผลแบบหน้าต่าง") action Preference("display", "window")
+                        textbutton _("เต็มจอ") action Preference("display", "fullscreen")
 
                 vbox:
                     style_prefix "radio"
@@ -743,10 +743,10 @@ screen preferences():
 
                 vbox:
                     style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+                    label _("ข้าม")
+                    textbutton _("ข้อความที่ยังไม่ถึง") action Preference("skip", "toggle")
+                    textbutton _("หลังจากทางเลือก") action Preference("after choices", "toggle")
+                    textbutton _("หลังการข้ามฉาก") action InvertSelected(Preference("transitions", "toggle"))
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
