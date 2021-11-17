@@ -95,7 +95,6 @@ define config.end_game_transition = None
 ## A variable to set the transition used when the game starts does not exist.
 ## Instead, use a with statement after showing the initial scene.
 
-define gui.interface_text_font = "FC Minimal Bold.ttf"
 
 ## Window management ###########################################################
 ##
