@@ -2,11 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 7: invalid syntax
-    Character(_(u"ทาคุโตะ ยูกิ"), (color="#2760c9"))
-
-File "game/script.rpy", line 8: invalid syntax
-    Character(_(u"โซโนซากิ มินะ"), (color="#38c72b"))
+File "game/script.rpy", line 169: expected statement.
+    fade mc shirt red
+                     ^
 
 Ren'Py Version: Ren'Py 7.4.10.2178
-Tue Nov 23 23:22:00 2021
+Wed Nov 24 01:20:34 2021
