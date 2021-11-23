@@ -4,7 +4,8 @@
 # name of the character.
 
 define mc = Character("???")
-
+define m = Character("ทาคุโตะ ยูกิ")
+define girl1 = Character("โซโนซากิ มินะ")
 
 # The game starts here.
 
@@ -85,9 +86,37 @@ label start:
     "ผมควรจะทำอย่างไรดี"
     menu:
         "หวนคืนสู่จุดเริ่มต้น":
-            jump end
+            jump start2
+    label start2:
+        play music "audio/FirstMemory.mp3"
+        mc "นี้นายนะ"
+        mc "นั้นไม่ใช่ที่นั่งนายนะ ที่นั้งเรียงตามเลขที่บนกระดานแล้วนะ"
+        "อะไรเนี่ย...?"
+        "เสียงนี้มัน..?"
+        "ไม่สิก็เธอน่าจะ..."
+        show satonaka at right
+        with dissolve
+        girl1 "พึ่งเปิดเทอมก็มาหลับอยู่ในห้องตั้งแต่เช้าเลยหรอ ไหวรึเปล่าเนี่ยนายนะ"
+        "แบบนี้มัน...อีกแล้วสินะ.."
+        scene classroom
+        with dissolve
+        "ใช่สินะ มันเกิดขึ้นอีกแล้ว"
+        "ผมทาคุโตะ ยูกิถ้าให้พูดก็นักวิจัยธรรมดานี้แหละ"
+        "แต่ตอนนี้เป็นนักเรียนมัธยมปลาย ที่่อยู่ตรงหน้าผมก็เพื่อนของผมเอง"
+        "เวลามันเวียนกลับมาอีกแล้วสินะ"
+        show mc almostcry at left
+        with dissolve
+        m "ขอโทษนะ พอดีเหม่อไปหน่อย ไม่ค่อยอยากจะมาเรียนเท่าไหร่เลย"
+        m "แต่ดีใจมากเลยนะได้เจอเธออีก"
+        show satonaka at right
+        with dissolve
+        girl1 "พูดอะไรของนายเนี่ยก็อยู่ด้วยกันมาตลอดไม่ใช่รึไง หัวกระแทกพื้นมาสิหรือเล่นเกมจนดึก"
+
+
     label end:
-        "END"
+        scene sky
+        with dissolve
+        "FIN"
     # This ends the game.
 
     return
