@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 35: stop requires a channel
-    stop scene
-        ^
+File "game/script.rpy", line 7: invalid syntax
+    Character(_(u"ทาคุโตะ ยูกิ"), (color="#2760c9"))
+
+File "game/script.rpy", line 8: invalid syntax
+    Character(_(u"โซโนซากิ มินะ"), (color="#38c72b"))
 
 Ren'Py Version: Ren'Py 7.4.10.2178
-Mon Nov 15 23:45:29 2021
+Tue Nov 23 23:22:00 2021

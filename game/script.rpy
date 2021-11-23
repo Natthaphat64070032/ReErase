@@ -4,8 +4,8 @@
 # name of the character.
 
 define mc = Character("???")
-define m = Character("ทาคุโตะ ยูกิ")
-define girl1 = Character("โซโนซากิ มินะ")
+define m = Character(_("ทาคุโตะ ยูกิ"), color="#2760c9")
+define girl1 = Character(_("โซโนซากิ มินะ"), color="#38c72b")
 
 # The game starts here.
 
@@ -111,6 +111,26 @@ label start:
         show satonaka at right
         with dissolve
         girl1 "พูดอะไรของนายเนี่ยก็อยู่ด้วยกันมาตลอดไม่ใช่รึไง หัวกระแทกพื้นมาสิหรือเล่นเกมจนดึก"
+        menu :
+            "เราควรตอบว่าอะไร"
+            "แค่คิดไปเรื่อยนะขอโทษด้วย":
+                jump story
+            "ขอบคุณมากนะที่ยังได้มาเจอกัน":
+                jump story
+        label story:
+            scene classroom
+            show satonaka at right
+            with dissolve
+            girl1 "นายนี้ละก็นะ"
+            girl1 "เตรียมตัวได้แล้วนะคาบแรกจะเริ่มแล้ว"
+            hide satonaka at right
+            with dissolve
+            "โดยรวมแล้วพลังที่ผมพูดถึงคือนี้แหละครับ"
+            "หากผมไม่พอใจในชีวิตตัวเอง หรืออะไรก็ตามผมสามารถย้อนกลับมาเริ่มใหม่ได้"
+            "โดยไม่รู้ว่าผมจะถูกย้อนกลับมาที่ไหน"
+            "ควรทำอะไร"
+            "ผมติดอยู่ในวังวงบ้าบอนี้มาซักพักใหญ่ๆแล้วครับ จะพูดว่าผมเป็นเด็กมัธยมก็คงไม่ได้แล้ว"
+            
 
 
     label end:
