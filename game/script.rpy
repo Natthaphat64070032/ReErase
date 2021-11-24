@@ -144,6 +144,7 @@ label start:
         with dissolve
         girl1 "เป็นอะไรของเขากันนะวันนี้"
         scene bg old room
+        with dissolve
         "ห้องของเรายังโล่งอยู่เลย"
         show mc shirt sad at right
         with dissolve
@@ -154,6 +155,8 @@ label start:
         stop music fadeout 1.0
         play sound "audio/knocking.mp3"
         mc "นี้! ยูกิอยู่รึเปล่า?"
+        hide mc shirt sad at right
+        show mc curious at right
         "มินะ? มาทำไมกัน"
         girl1 "ไหนบอกว่าไม่สบายไง ก็เลยวันนี้ลาเรียนแล้วซื้อของมาฝาก"
         play music "audio/out of mere play.mp3"
@@ -228,6 +231,7 @@ label start:
         "การที่ผมพูดแต่ละคำพูด"
         "แต่ละประโยคโดยไม่ให้สนใจความรู้สึกตัวเองก็คงเป็นไปไม่ได้"
         scene bg old room
+        with dissolve
         show satonaka smile at right
         with dissolve
         girl1 "นายนะ เป็นอย่างนี้มานานแล้วนะ เอาแต่คิดไปเรื่อยไม่สนเรื่องตัวเองบ้างเลย"
@@ -265,8 +269,26 @@ label start:
         with dissolve
         girl1 "บังเอิญจังเลยนะ นี้ยูกิใช่ไหม"
         "ปวดหัวตั้งแต่เช้าเลยนะเนี่ย"
+        girl1 "เดี๋ยวนี้เย็นชาขึ้นนะไม่คิดจะตอบหน่อยรึไง"
+        show satonaka at right
+        with dissolve
+        girl1 "คิดจะหลบหน้ากันรึไง คนเค้าเป็นห่วงนะ"
+        show mc hood2 at left
+        with dissolve
+        menu :
+            "ตอบอะไรดีนะ"
+            "อรุณสวัสดิ์นอนดึกไปหน่อยเลยยังมึนๆน่ะ":
+                jump choice1_1
+            "เสียงดังตั้งแต่เช้าเลยเดี๋ยวคนอื่นก็มองกันมาหรอก":
+                jump choice1_2
 
+    label choice1_1:
+        girl1 "พักผ่อนบ้างก็ดีนะนายนะ"
 
+    label choice1_2:
+        hide satonaka
+        show satonaka warm angry at right
+        girl1 "สงสัยช่วงนี้จะกินยาผิดขวดจริงๆ ช่วงนี้ไม่เป็นมิตรเลยนะนายเนี่ย"
 
     label end:
         stop music fadeout 1.0
@@ -280,7 +302,7 @@ label start:
         "ขอบคุณทุกคนที่เล่นมาจนจบด้วยครับ หากมีโอกาศหน้า ยังคาดหวัง"
         "ที่จะได้เจอกับทุกคนอีกนะครับ"
         stop music fadeout 3.0
-        "FIN"
+        centered "FIN"
     # This ends the game.
 
     return
