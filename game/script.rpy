@@ -242,11 +242,31 @@ label start:
         girl1 "ยังไงก็พรุ่งนี้อย่าลืมไปโรงเรียนให้ได้นะ"
         hide satonaka sad
         with dissolve
-        show mc shirt sad2 at right
+        show mc shirt sad2 at left
         with dissolve
         m "ขอบคุณมากนะ ขอบคุณจริงๆ"
         m "ดีใจจริงๆที่ได้เจอเธออีก..."
-        
+        stop music fadeout 1.0
+        scene black
+        with fade
+        centered "วันต่อมา"
+        play sound "audio/bird.wav"
+        "เช้าแล้วหรอ"
+        "นี้เราใช้เวลาเสียไปวันนึงเลยหรอ"
+        scene bg old room
+        with dissolve
+        "ถ้างั้นจะอยู่เฉยๆไม่ได้แล้วสินะ"
+        "เตรียมตัวไปโรงเรียนก่อนละกัน"
+        scene black
+        with fade
+        centered "ระหว่างทาง"
+        play music "audio/New Days.mp3"
+        scene subway
+        with dissolve
+        girl1 "บังเอิญจังเลยนะ นี้ยูกิใช่ไหม"
+        "ปวดหัวตั้งแต่เช้าเลยนะเนี่ย"
+
+
 
     label end:
         stop music fadeout 1.0
