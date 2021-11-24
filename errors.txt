@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 169: expected statement.
-    fade mc shirt red
-                     ^
+File "game/script.rpy", line 244: expected statement.
+    xzoom -1.0
+            ^
 
 Ren'Py Version: Ren'Py 7.4.10.2178
-Wed Nov 24 01:20:34 2021
+Wed Nov 24 07:40:08 2021
