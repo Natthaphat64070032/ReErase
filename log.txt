@@ -1,223 +1,13 @@
-Fri Nov 26 06:23:36 2021
+Tue Dec  7 14:25:09 2021
 Windows-10-10.0.19041
 Ren'Py 7.4.10.2178
  
 
-Bootstrap to the start of init.init took 0.08s
-Early init took 0.01s
-Loader init took 0.03s
-Loading error handling took 0.02s
-Loading script took 0.19s
-Loading save slot metadata. took 0.08s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 322: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    menu :
-    ^
-
-File "game/script.rpy", line 324: expected statement.
-    "ไม่ได้เจอกันนานเลยนะ ดีจังที่เจอกันอีก":
-                                            ^
-
-File "game/script.rpy", line 326: expected statement.
-    "จะโผล่มาทำไมละเนี่ย คิดว่าหลุดพ้นจากนายแล้วแท้ๆ":
-                                                     ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.27s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon R9 200 Series'
-Version: '4.6.14830 Compatibility Profile Context 21.4.1 27.20.21002.112'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1392, 783) drawable=(1392, 783)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 25.52s
+Bootstrap to the start of init.init took 0.11s
 Early init took 0.00s
 Loader init took 0.01s
 Loading error handling took 0.02s
-Loading script took 0.18s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 322: menu statement expects a non-empty block.
-    menu :
-        ^
-
-File "game/script.rpy", line 324: expected statement.
-    "ไม่ได้เจอกันนานเลยนะ ดีจังที่เจอกันอีก":
-                                            ^
-
-File "game/script.rpy", line 326: expected statement.
-    "จะโผล่มาทำไมละเนี่ย คิดว่าหลุดพ้นจากนายแล้วแท้ๆ":
-                                                     ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon R9 200 Series'
-Version: '4.6.14830 Compatibility Profile Context 21.4.1 27.20.21002.112'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1392, 783) drawable=(1392, 783)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 27.03s
-Early init took 0.00s
-Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 322: menu statement expects a non-empty block.
-    menu :
-        ^
-
-File "game/script.rpy", line 324: expected statement.
-    "ไม่ได้เจอกันนานเลยนะ ดีจังที่เจอกันอีก":
-                                            ^
-
-File "game/script.rpy", line 326: expected statement.
-    "จะโผล่มาทำไมละเนี่ย คิดว่าหลุดพ้นจากนายแล้วแท้ๆ":
-                                                     ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon R9 200 Series'
-Version: '4.6.14830 Compatibility Profile Context 21.4.1 27.20.21002.112'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1392, 783) drawable=(1392, 783)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 37.46s
-Early init took 0.00s
-Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.14s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 322: menu statement expects a non-empty block.
-    menu :
-        ^
-
-File "game/script.rpy", line 324: expected statement.
-    "ไม่ได้เจอกันนานเลยนะ ดีจังที่เจอกันอีก":
-                                            ^
-
-File "game/script.rpy", line 326: expected statement.
-    "จะโผล่มาทำไมละเนี่ย คิดว่าหลุดพ้นจากนายแล้วแท้ๆ":
-                                                     ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon R9 200 Series'
-Version: '4.6.14830 Compatibility Profile Context 21.4.1 27.20.21002.112'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1392, 783) drawable=(1392, 783)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 39.52s
-Early init took 0.00s
-Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata. took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 322: menu statement expects a non-empty block.
-    menu :
-        ^
-
-File "game/script.rpy", line 324: expected statement.
-    "ไม่ได้เจอกันนานเลยนะ ดีจังที่เจอกันอีก":
-                                            ^
-
-File "game/script.rpy", line 326: expected statement.
-    "จะโผล่มาทำไมละเนี่ย คิดว่าหลุดพ้นจากนายแล้วแท้ๆ":
-                                                     ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon R9 200 Series'
-Version: '4.6.14830 Compatibility Profile Context 21.4.1 27.20.21002.112'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1392, 783) drawable=(1392, 783)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 40.52s
-Early init took 0.00s
-Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.17s
-Loading save slot metadata. took 0.03s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 322: menu statement expects a non-empty block.
-    menu :
-        ^
-
-File "game/script.rpy", line 324: expected statement.
-    "ไม่ได้เจอกันนานเลยนะ ดีจังที่เจอกันอีก":
-                                            ^
-
-File "game/script.rpy", line 326: expected statement.
-    "จะโผล่มาทำไมละเนี่ย คิดว่าหลุดพ้นจากนายแล้วแท้ๆ":
-                                                     ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: "Couldn't load nvlib." (can be ignored)
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'ATI Technologies Inc.'
-Renderer: 'AMD Radeon R9 200 Series'
-Version: '4.6.14830 Compatibility Profile Context 21.4.1 27.20.21002.112'
-Display Info: None
-Screen sizes: virtual=(1280, 720) physical=(1392, 783) drawable=(1392, 783)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 68.95s
-Early init took 0.00s
-Loader init took 0.01s
-Loading error handling took 0.02s
-Loading script took 0.19s
+Loading script took 0.22s
 Loading save slot metadata. took 0.02s
 Loading persistent took 0.00s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
@@ -236,16 +26,16 @@ nvdrs: "Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.04s
-Build styles took 0.00s
+Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.03s
 Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
+Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.07s
+Interface start took 0.27s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -257,3 +47,4 @@ Version: '4.6.14830 Compatibility Profile Context 21.4.1 27.20.21002.112'
 Display Info: None
 Screen sizes: virtual=(1280, 720) physical=(1392, 783) drawable=(1392, 783)
 Maximum texture size: 4096x4096
+controller: '030000004c050000cc09000000016800' 'PS4 Controller' 1L
