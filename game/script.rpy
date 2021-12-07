@@ -391,7 +391,7 @@ label start:
             with dissolve
             m "ตามมาถึงนี้เลยหรอ"
 
-        elif friendshipm1 == 1 and friendshipg1 == 0:
+        elif friendshipm1 >= 1 and friendshipg1 == 0:
             jump story2_2m
             label story2_2m:
             male1 "ถ้าไม่รังเกียจผมขอนั่งด้วยคนนะครับ"
