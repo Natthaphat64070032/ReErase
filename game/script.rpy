@@ -166,6 +166,7 @@ label start:
         menu :
             "ทำอะไรดี"
             "เดินไปเปิดประตู":
+                $ friendshipg1 += 1
                 jump story21
             "ปล่อยเฉยๆ":
                 jump story22
@@ -181,8 +182,10 @@ label start:
         menu :
             "ตอบดีๆนะ"
             "ไม่สบายจริงๆนะ":
+                $ friendshipg1 += 2
                 jump sick
             "ก็แค่ไม่อยากเรียนเอง":
+                $ friendshipg1 += 1
                 jump fakesick
         label sick:
             girl1 "งั้นก็คิดถูกจริงๆที่โดดเรียนตามมาด้วย"
@@ -397,7 +400,7 @@ label start:
             m "นี้นายตามมาด้วยหรอ"
             m "ตามมาถึงนี้เลยหรอ"
 
-        elif friendshipg1 == 1 and friendshipm1 == 0:
+        elif friendshipg1 >= 1 and friendshipm1 == 0:
             jump story2_2g
             label story2_2g:
             girl1 "คิดจะแยกตัวคนเดียวอีกแล้วหรอนายนะ"
