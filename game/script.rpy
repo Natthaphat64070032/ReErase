@@ -325,7 +325,7 @@ label start:
         menu :
             "ตอบอะไรดีนะ"
             "ไม่ได้เจอกันนานเลยนะ ดีจังที่เจอกันอีก":
-                $ friendshipm1 += 2
+                $ friendshipm1 += 1
                 jump choice2_1
             "จะโผล่มาทำไมละเนี่ย คิดว่าหลุดพ้นจากนายแล้วแท้ๆ":
                 jump choice2_2
@@ -388,7 +388,7 @@ label start:
             with dissolve
             m "ตามมาถึงนี้เลยหรอ"
 
-        elif friendshipm1 == 2 and friendshipg1 == 0:
+        elif friendshipm1 == 1 and friendshipg1 == 0:
             jump story2_2m
             label story2_2m:
             male1 "ถ้าไม่รังเกียจผมขอนั่งด้วยคนนะครับ"
@@ -405,6 +405,8 @@ label start:
             with dissolve
             m "นี้เธอตามมาด้วยหรอ"
             
+            
+    
             
 
     label end:
