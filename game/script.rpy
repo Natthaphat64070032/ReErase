@@ -8,6 +8,8 @@ define m = Character(_("ทาคุโตะ ยูกิ"), color="#2760c9")
 define girl1 = Character(_("โซโนซากิ มินะ"), color="#38c72b")
 define male1 = Character(_("คิตากาวะ จุนอิจิ"), color="#da9e1d")
 
+default friendshipg1 = 0
+default friendshipm1 = 0
 # The game starts here.
 
 label start:
@@ -279,6 +281,7 @@ label start:
         menu :
             "ตอบอะไรดีนะ"
             "อรุณสวัสดิ์นอนดึกไปหน่อยเลยยังมึนๆน่ะ":
+                $ friendshipg1 += 1
                 jump choice1_1
             "เสียงดังตั้งแต่เช้าเลยเดี๋ยวคนอื่นก็มองกันมาหรอก":
                 jump choice1_2
@@ -322,6 +325,7 @@ label start:
         menu :
             "ตอบอะไรดีนะ"
             "ไม่ได้เจอกันนานเลยนะ ดีจังที่เจอกันอีก":
+                $ friendshipm1 += 2
                 jump choice2_1
             "จะโผล่มาทำไมละเนี่ย คิดว่าหลุดพ้นจากนายแล้วแท้ๆ":
                 jump choice2_2
@@ -359,11 +363,50 @@ label start:
             jump story2_2
 
     label story2_2:
+        stop music fadeout 1.0
         scene black
         with fade
         centered "พักกลางวัน"
+        play music "audio/Tsuiokunokakera.mp3"
+        "หลังจากนี้การตัดสินใจการกระทำเราจะส่งผลแล้วสินะ"
+        "เพราะที่ผ่านมาที่เราทำไป"
+        "ก็เหมือนรอบที่ผ่านๆมา"
+        "ครั้งนี้ต้องไม่เหมือนเดิม"
+        "เราได้โอกาสแล้ว แถมครั้งนี้ยังมีเพื่อนอย่างจุนอิจิ"
+        "การที่หมอนั้นได้มาโผล่ที่นี้ต้องไม่ใช่เรื่องบังเอิญอย่างแน่นอน"
+        scene bg canteen
+        with dissolve
+        "คิดมากไปก็เท่านั้น จริงๆโรงเรียนนี้อาหารก็ยังอร่อยเหมือนเดิมเลย"
+        if friendshipg1 >= 1 and friendshipm1 >= 1:
+            jump story2_2best
+            label story2_2best:
+            girl1 "คิดจะแยกตัวคนเดียวอีกแล้วหรอนายนะ"
+            male1 "ถ้าไม่รังเกียจผมขอนั่งด้วยคนนะครับ"
+            show akechi smile at right
+            with dissolve
+            show satonaka warm smile at left
+            with dissolve
+            m "ตามมาถึงนี้เลยหรอ"
 
-    
+        elif friendshipm1 == 2 and friendshipg1 == 0:
+            jump story2_2m
+            label story2_2m:
+            male1 "ถ้าไม่รังเกียจผมขอนั่งด้วยคนนะครับ"
+            show akechi smile at right
+            with dissolve
+            m "นี้นายตามมาด้วยหรอ"
+            m "ตามมาถึงนี้เลยหรอ"
+
+        elif friendshipg1 == 1 and friendshipm1 == 0:
+            jump story2_2g
+            label story2_2g:
+            girl1 "คิดจะแยกตัวคนเดียวอีกแล้วหรอนายนะ"
+            show satonaka warm smile at right
+            with dissolve
+            m "นี้เธอตามมาด้วยหรอ"
+            
+            
+
     label end:
         stop music fadeout 1.0
         play music "audio/Never More.mp3" volume 0.6
