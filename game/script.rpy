@@ -474,8 +474,25 @@ label start:
         with fade
         centered "เลิกเรียน"
         
-
-    label end:
+    label bad_end1:
+        stop music fadeout 1.0
+        play music "audio/Haru wa Yuku.mp3" volume 0.6
+        "มันจบแล้ว"
+        "เรื่องราวความเลวร้ายทั้งหมด"
+        "มันจบลงแล้ว แต่สิ่งที่ต้องแลก"
+        "มันก็เกินกว่าที่ตัวผมนั้นเองจะรับไหว"
+        "มันหนักหนาเหลือเกิน"
+        "ถ้าหากผมอยู่คนเดียวคงไม่ไหวแน่ๆ"
+        "แต่อย่างน้อยในวันนี้เธอก็อยู่กับผม"
+        "และคงจะ"
+        "ไม่จากผมไปไหนอีกแล้ว"
+        "ถึงผมจะไม่รู้ว่าที่ทำไปมันถูกรึเปล่า"
+        "แต่แค่ได้อยู่กับเธอแบบนี้ตลอดไป"
+        "ผมก็พร้อมที่จะใช้ชีวิตต่อแล้ว"
+        stop music fadeout 3.0
+        centered "END"
+        
+    label trueend:
         stop music fadeout 1.0
         play music "audio/Never More.mp3" volume 0.6
         scene sky
