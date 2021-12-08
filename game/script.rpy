@@ -387,9 +387,34 @@ label start:
             male1 "ถ้าไม่รังเกียจผมขอนั่งด้วยคนนะครับ"
             show akechi smile at right
             with dissolve
-            show satonaka warm smile at left
+            show satonaka warm smile2 at left
             with dissolve
-            m "ตามมาถึงนี้เลยหรอ"
+            m "ทั้งสองคน..."
+            m "ตามมาถึงนี้เลยงั้นหรอ จะว่าไปทั้งคู่ไปสนิทกันตอนไหนเนี่ย"
+            hide akechi smile at right
+            show akechi at right
+            male1 "ก็เพราะคุณทาคุโตะนั้นแหละครับทำให้พวกผมเป็นห่วง"
+            hide satonaka warm smile2 at left
+            show satonaka2 at left
+            girl1 "นายนะทำให้พวกเราเป็นห่วงนะ"
+            girl1 "แค่มาเรียนวันแรกก็โดนเรียนหนีไปซะแล้ว"
+            male1 "เพราะงั้นผมเลยคิดว่าถ้ามาดูแลคุณหน่อยน่าจะดีครับ"
+            girl1 "นายทำตัวแปลกๆมาตั้งแต่เมื่อวานแล้วนะ"
+            male1 "ผมเห็นด้วยกับที่คุณโซโนซากิพูดนะครับ คุณทาคุโตะดูไม่สดใสเหมือนเมื่อก่อนเลย"
+            hide akechi at right
+            show akechi smile at right
+            male1 "หรือจะให้พูดคือรู้สึกเหมือนคนละคนเลยละครับ"
+            "หมอนี้ยังดูน่ารำคาญเหมือนเดิมเลย"
+            "แต่แบบนี้ก็ไม่เลวหรอกนะ"
+            m "ขอบคุณนะทั้งคู่เลย ขอบคุณจริงๆ"
+            hide satonaka2 at left
+            show satonaka warm smile2 at left
+            girl1 "เห็นไหม นายเปลี่ยนไปจริงๆด้วย ขอบคุณพวกเราแบบนี้"
+            girl1 "ก็พวกเราเป็นเพื่อนกันไม่ใช่หรอ"
+            male1 "แต่ถ้าคุยกันแบบนี้น่าจะไม่ได้รับประทานอาหารจนเวลาหมดนะครับ"
+            play sound "audio/School Bell.wav"
+            male1 "งั้นหลังเลิกเรียนมาเจอกันหน่อยนะครับ อย่าหนีไปละครับ คุณทาคุโตะ"
+            jump story2_3
 
         elif friendshipm1 >= 1 and friendshipg1 == 0:
             jump story2_2m
@@ -399,6 +424,24 @@ label start:
             with dissolve
             m "นี้นายตามมาด้วยหรอ"
             m "ตามมาถึงนี้เลยหรอ"
+            hide akechi smile at right
+            show akechi at right
+            male1 "อยู่ๆเปิดเรียนวันแรกก็หายไปแบบนั้นเลยคิดว่าต้องมีอะไรแน่ๆ"
+            male1 "คิดว่าการเป็นห่วงคนรู้จักก็ไม่ใช่อะไรแปลกไม่ใช่หรอครับ"
+            male1 "แต่ทาคุโตะก็ดูจริงจังกว่าเมื่อก่อนมากเลยทั้งสายตา ทั้งคำพูด"
+            hide akechi at right
+            show akechi smile at right
+            male1 "หรือจะให้พูดคือเหมือนคนละคนกับตอนม.ต้นเลยครับ"
+            male1 "เพราะงั้นผมในฐานะที่ต้องเป็นเพื่อนร่วมห้องกันอย่างน้อยอีก 1 ปีแถมยังรู้จักกันมาก่อน"
+            hide akechi smile at right
+            show akechi at right
+            male1 "จะให้ปล่อยเพื่อนที่รู้จักไว้คงไม่ได้หรอกครับ"
+            m "ขอบคุณนายนะ ขอบคุณจริงๆ"
+            male1 "เรื่องแค่นี้ปล่อยไม่ได้หรอกครับ"
+            play sound "audio/School Bell.wav"
+            male1 "แต่ว่าก่อนจะเข้าเรื่องกันผมว่ารอเลิกเรียนดีกว่านะครับ"
+            male1 "งั้นเจอกันหลังเลิกเรียนครับ ผมมีคนอยากให้เจอด้วย คนที่คุณคิดนั้นแหละครับ"
+            jump story2_3
 
         elif friendshipg1 >= 1 and friendshipm1 == 0:
             jump story2_2g
@@ -407,10 +450,30 @@ label start:
             show satonaka warm smile at right
             with dissolve
             m "นี้เธอตามมาด้วยหรอ"
-            
-            
-    
-            
+            hide satonaka warm smile at right
+            show satonaka at right
+            girl1 "คิดว่าจะปล่อยนายไว้ตัวคนเดียวรึยังไง"
+            girl1 "เมื่อวานก็เห็นมากับตาแล้วว่านายไม่ปกติช่วงนี้"
+            girl1 "ก็เลยคิดว่ามีเรื่องต้องคุยกับนายให้ชัดเจน"
+            hide satonaka at right
+            show satonaka warm smile at right
+            girl1 "อีกอย่างนายที่เคยรู้จักก็ไม่่ค่อยคิดมากอะไรแบบนี้ด้วย"
+            girl1 "ออกจะดูเป็นคนเลื่อยลอยไม่ค่อยสนใจเรื่องข้างหน้าแล้วใช้ชีวิตไปเรื่อยๆ"
+            girl1 "แต่นี้เหมือนนายคิดมากมาตั้งนานแล้ว"
+            hide satonaka warm smile at right
+            show satonaka at right
+            girl1 "งั้นเรื่องนี้ไว้แค่นี้ก่อนทางนี้ข้าวหน้าเนื้อก็จะหายร้อนแล้วด้วย"
+            play sound "audio/School Bell.wav"
+            girl1 "อย่างที่คิดเลยงั้นหลังเลิกเรียนเจอกันนะ ก่อนนี้บอกหมอนั้นไว้แล้วละเพราะงั้นต้องมาด้วยละ"
+            m "เอ๊ะ!?"
+            m "ได้เลยแล้วเจอกันนะ ขอบคุณมากนะ"
+            jump story2_3
+    label story2_3:
+        stop music fadeout 1.0
+        scene black
+        with fade
+        centered "เลิกเรียน"
+        
 
     label end:
         stop music fadeout 1.0
