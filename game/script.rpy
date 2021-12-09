@@ -7,6 +7,7 @@ define mc = Character("???")
 define m = Character(_("ทาคุโตะ ยูกิ"), color="#2760c9")
 define girl1 = Character(_("โซโนซากิ มินะ"), color="#38c72b")
 define male1 = Character(_("คิตากาวะ จุนอิจิ"), color="#da9e1d")
+define ac = Character(_("ทุกคน"), color="#ffffff")
 
 default friendshipg1 = 0
 default friendshipm1 = 0
@@ -476,6 +477,28 @@ label start:
         scene black
         with fade
         centered "เลิกเรียน"
+        scene bg old room
+        with dissolve
+        play sound "audio/knocking.mp3"
+        show satonaka warm smile2 at left
+        with dissolve
+        girl1 "รบกวนหน่อยนะ"
+        show akechi smile at right
+        with dissolve
+        male1 "รบกวนหน่อยนะครับ"
+        play music "audio/Like a dream come true.mp3"
+        m "เดี๋ยวนะ ที่ไม่ได้บอกสถานที่ว่าที่ไหนก็เพราะงี้สินะ"
+        male1 "ใช่เลยครับไหนๆก็จะมารบกวนทั้งทีแล้วก็ต้องเป็นห้องคุณทาคุโตะนี้แหละครับ"
+        girl1 "เพื่อนมาห้องทั้งทีไม่เตรียมอาหารให้หน่อยหรอ"
+        m "คนเค้าก็พึ่งกลับมาจากโรงเรียนเหมือนกันนะ"
+        male1 "ผมเห็นด้วยเรื่องรับแขกควรมีอาหารเหมือนกับที่คุณโซโนซากิพูดนะครับ"
+        m "ทั้งคู่นี้มัน"
+        "แต่ผมก็ไม่ได้คิดว่ามันเลวร้ายหรอกนะ"
+        "มีเพื่อน ได้ใช้ชีวิตมัธยมปลายอีกครั้ง"
+        "เป็นเด็กแบบนี้ก็ไม่เลยเลย"
+        m "เข้าใจแล้วๆ"
+        ac "รบกวนด้วยนะ"
+        
         
     label bad_end1:
         stop music fadeout 1.0
