@@ -117,8 +117,10 @@ label start:
         menu :
             "เราควรตอบว่าอะไร"
             "แค่คิดไปเรื่อยนะขอโทษด้วย":
+                $ friendshipg1 += 1
                 jump story
             "ขอบคุณมากนะที่ยังได้มาเจอกัน":
+                $ friendshipg1 += 2
                 jump story
     label story:
         scene classroom
