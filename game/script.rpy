@@ -162,7 +162,7 @@ label start:
         play sound "audio/knocking.mp3"
         mc "นี่! ยูกิอยู่รึเปล่า?"
         hide mc shirt sad at right
-        show mc curious at right
+        show mc shirt at right
         "มินะ? มาทำไมกัน"
         girl1 "ไหนบอกว่าไม่สบายไง ก็เลยวันนี้ลาเรียนแล้วซื้อของมาฝาก"
         play music "audio/out of mere play.mp3"
@@ -498,6 +498,58 @@ label start:
         "เป็นเด็กแบบนี้ก็ไม่เลวเลยเลย"
         m "เข้าใจแล้วๆ"
         ac "รบกวนด้วยนะ"
+        scene bg old room
+        with dissolve
+        centered "ผ่านไปครึ่งชั่วโมง"
+        show mc shirt2 at left 
+        m "นี้อาหารมาแล้วนะ"
+        scene curry
+        with dissolve
+        girl1 "โหนี้ดูน่ากินเลยนะเนี่ย"
+        male1 "เพราะงี้เลยอยู่ตัวคนเดียวได้โดยไม่ต้องออกไปซื้ออาหารข้างนอกสินครับ"
+        male1 "แต่ฝีมือนี้ถือว่าเหนือกว่าเด็กมัธยมปลายอีกนะครับ งานอดิเรกหรอครับเนี่ย"
+        menu optional_name:
+            "ตอบอะไรดี"
+            "แค่นิดหน่อยเอง":
+                $ friendshipg1 += 1
+                $ friendshipm1 += 1
+            "ถ้าเรื่องอาหารไว้ใจได้เลย":
+                $ friendshipg1 += 1
+                $ friendshipm1 += 1
+        scene bg old room
+        with dissolve
+        show satonaka warm smile2 at left
+        with dissolve
+        girl1 "อาหารอร่อยเลยนะเนี่ย อร่อยกว่าแกงกะหรี่ตามร้านอาหารอีก"
+        girl1 "เก่งขนาดนี้เปิดร้านอาหารยังได้เลยนะ"
+        hide satonaka warm smile2 at left
+        show satonaka2 at left
+        girl1 "เอาเวลาที่ไหนไปฝึกละนี่ไหนจะเรื่องสอบเข้าอีกนายนี้เก่งเลยนะเนี่ย"
+        show akechi at right
+        with dissolve
+        male1 "จริงๆผมก็สงสัยนะครับ เห็นเป็นคนเงียบๆแบบนี้แต่กลับมีด้านแปลกๆที่ไม่คิดว่าจะมีเยอะเลย"
+        hide akechi at right
+        show akechi smile at right
+        male1 "ถามไปคุณทาคุโตะคงเลี่ยงที่จะไม่ตอบเพราะงั้นเรามาเข้าเรื่องกันดีกว่าครับ"
+        stop music fadeout 1.0
+        male1 "คุณทาคุโตะ คุณไม่ใช่เด็กมัธยมปลายสินะครับ"
+        play music "audio/Reasoning.mp3"
+        girl1 "เอ๊ะ นี้คิตากาวะ นายไม่สบายตรงไหนรึเปล่า ที่เรามานี้ไม่ใช่ว่าเพราะเป็นห่วงหมอนี้หรอ"
+        hide satonaka2 at left
+        show satonaka warm sad2 at left
+        girl1 "แล้วคำถามไร้สาระนี้มันอะไรเนี่ย"
+        hide akechi smile at right
+        show akechi at right
+        male1 "ผมจริงจังครับ คิดว่าคนที่ไม่เลือกเข้าโรงเรียนเดียวกับคุณแบบผมมาเข้าโรงเรียนเดียวกับคุณทาคุโตะ"
+        male1 "มันไม่แปลกไปหน่อยหรอครับ คุณเองก็น่าจะรู้ตัว"
+        male1 "ว่าพวกเราไม่ใช่เด็กแล้วนะครับ"
+        "อะไรกัน"
+        "นี้แสดงว่าเราไม่ได้คิดไปเองหรอว่าครั้งก่อนๆหมอนี้ไม่ได้อยู่"
+        male1 "ถ้าถามว่าผมรู้ได้ยังไง ก็เพราะรอบนี้ผมกลับมาก่อนที่คุณเลือกทางที่ผิดยังไงละครับ"
+        male1 "จะว่ากันแล้วคุณที่ผมรู้จัก"
+        male1 "ตายไปแล้วครับ"
+        m "เอ๊ะ?"
+        m "เมื่อกี้คงคิดว่านายล้อเล่น แต่นี้จริงจังสินะ"
         
         
     label bad_end1:

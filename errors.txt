@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 382: Line is indented, but the preceding jump statement statement does not expect a block. Please check this line's indentation.
-    label story2_2best:
-    ^
+File "game/script.rpy", line 513: illegal expression for augmented assignment
 
-File "game/script.rpy", line 393: Line is indented, but the preceding jump statement statement does not expect a block. Please check this line's indentation.
-    label story2_2m:
-    ^
-
-File "game/script.rpy", line 402: Line is indented, but the preceding jump statement statement does not expect a block. Please check this line's indentation.
-    label story2_2g:
-    ^
+File "game/script.rpy", line 515: illegal expression for augmented assignment
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Tue Dec  7 18:37:55 2021
+Thu Dec  9 20:23:45 2021
