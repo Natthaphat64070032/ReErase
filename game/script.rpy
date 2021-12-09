@@ -10,6 +10,7 @@ define male1 = Character(_("คิตากาวะ จุนอิจิ"), co
 
 default friendshipg1 = 0
 default friendshipm1 = 0
+default allfriend = friendshipg1 + friendshipm1
 # The game starts here.
 
 label start:
