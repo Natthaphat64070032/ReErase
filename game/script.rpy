@@ -478,6 +478,8 @@ label start:
     label bad_end1:
         stop music fadeout 1.0
         play music "audio/Haru wa Yuku.mp3" volume 0.6
+        scene black
+        with fade
         "มันจบแล้ว"
         "เรื่องราวความเลวร้ายทั้งหมด"
         "มันจบลงแล้ว แต่สิ่งที่ต้องแลก"
@@ -504,8 +506,11 @@ label start:
         "เพราะงั้นการได้ลองทำอะไรให้เต็มที่คงจะดีที่สุดละนะ"
         "ขอบคุณทุกคนที่เล่นมาจนจบด้วยครับ หากมีโอกาศหน้า ยังคาดหวัง"
         "ที่จะได้เจอกับทุกคนอีกนะครับ"
+        scene black
+        with fade
         stop music fadeout 3.0
         centered "FIN"
+        
     # This ends the game.
 
     return
