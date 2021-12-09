@@ -554,7 +554,7 @@ label start:
         
     label bad_end1:
         stop music fadeout 1.0
-        play music "audio/Haru wa Yuku.mp3" volume 0.6
+        play music "audio/Hana no Uta.mp3" volume 0.6
         scene black
         with fade
         "มันจบแล้ว"
