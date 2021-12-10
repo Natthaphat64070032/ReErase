@@ -382,7 +382,7 @@ label start:
         scene bg canteen
         with dissolve
         "คิดมากไปก็เท่านั้น จริงๆโรงเรียนนี้อาหารก็ยังอร่อยเหมือนเดิมเลย"
-        
+
         if friendshipg1 >= 3 and friendshipm1 >= 1:
             jump story2_2best
             label story2_2best:
@@ -576,6 +576,7 @@ label start:
         "ขอบคุณทีอยู่ด้วยกันจนถึงตอนนี้นะครับ"
         "ซักวันเราคงจะได้เจอกันใหม่"
         centered "END"
+        return
 
     label trueend:
         stop music fadeout 1.0
@@ -592,7 +593,6 @@ label start:
         with fade
         stop music fadeout 3.0
         centered "FIN"
-
+        return
     # This ends the game.
 
-    return
