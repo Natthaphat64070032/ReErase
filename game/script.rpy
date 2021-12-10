@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define mc = Character("???")
+define mc = Character(_("???"), color="#ffffff")
 define m = Character(_("ทาคุโตะ ยูกิ"), color="#2760c9")
 define girl1 = Character(_("โซโนซากิ มินะ"), color="#38c72b")
 define male1 = Character(_("คิตากาวะ จุนอิจิ"), color="#da9e1d")
@@ -619,8 +619,18 @@ label start:
         show mc shirt sad at right
         with dissolve
         m "รู้อยู่แล้วละ ยังไงก็ขอบคุณมากนะ"
-        
+        m "นายนี้ดูสังเกตคนอื่นมากกว่าที่คิดไว้เยอะเลยนะ"
 
+    label routetest:
+        scene black
+        with fade
+        menu :
+            "ลองเทส"
+            "Bad End1":
+                jump bad_end1
+            "True End":
+                jump trueend
+            
     #ENDING ROUTE PART 1
     label bad_end1:
         stop music fadeout 1.0
