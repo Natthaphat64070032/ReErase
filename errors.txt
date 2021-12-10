@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 513: illegal expression for augmented assignment
+The label optional_name is defined twice, at File "game/script.rpy", line 511:
+        menu optional_name:
+and File "game/script.rpy", line 556:
+        menu optional_name:
 
-File "game/script.rpy", line 515: illegal expression for augmented assignment
 
 Ren'Py Version: Ren'Py 7.4.11.2266
-Thu Dec  9 20:23:45 2021
+Fri Dec 10 12:31:17 2021
