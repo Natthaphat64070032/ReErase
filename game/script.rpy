@@ -118,10 +118,8 @@ label start:
         menu :
             "เราควรตอบว่าอะไร"
             "แค่คิดไปเรื่อยนะขอโทษด้วย":
-                $ friendshipg1 += 1
                 jump story
             "ขอบคุณมากนะที่ยังได้มาเจอกัน":
-                $ friendshipg1 += 2
                 jump story
     label story:
         scene classroom
@@ -170,7 +168,6 @@ label start:
         menu :
             "ทำอะไรดี"
             "เดินไปเปิดประตู":
-                $ friendshipg1 += 1
                 jump story21
             "ปล่อยเฉยๆ":
                 jump story22
@@ -291,6 +288,7 @@ label start:
                 $ friendshipg1 += 1
                 jump choice1_1
             "เสียงดังตั้งแต่เช้าเลยเดี๋ยวคนอื่นก็มองกันมาหรอก":
+                $ friendshipg1 -= 1
                 jump choice1_2
 
         label choice1_1:
@@ -384,7 +382,8 @@ label start:
         scene bg canteen
         with dissolve
         "คิดมากไปก็เท่านั้น จริงๆโรงเรียนนี้อาหารก็ยังอร่อยเหมือนเดิมเลย"
-        if friendshipg1 >= 1 and friendshipm1 >= 1:
+        
+        if friendshipg1 >= 3 and friendshipm1 >= 1:
             jump story2_2best
             label story2_2best:
             girl1 "คิดจะแยกตัวคนเดียวอีกแล้วหรอนายนะ"
@@ -420,7 +419,7 @@ label start:
             male1 "งั้นหลังเลิกเรียนมาเจอกันหน่อยนะครับ อย่าหนีไปละครับ คุณทาคุโตะ"
             jump story2_3
 
-        elif friendshipm1 >= 1 and friendshipg1 == 0:
+        elif friendshipm1 >= 1 and friendshipg1 < 3 :
             jump story2_2m
             label story2_2m:
             male1 "ถ้าไม่รังเกียจผมขอนั่งด้วยคนนะครับ"
@@ -447,7 +446,7 @@ label start:
             male1 "งั้นเจอกันหลังเลิกเรียนครับ ผมมีคนอยากให้เจอด้วย คนที่คุณคิดนั่นแหละครับ"
             jump story2_3
 
-        elif friendshipg1 >= 1 and friendshipm1 == 0:
+        else:
             jump story2_2g
             label story2_2g:
             girl1 "คิดจะแยกตัวคนเดียวอีกแล้วหรอนายนะ"
@@ -472,6 +471,7 @@ label start:
             m "เอ๊ะ!?"
             m "ได้เลยแล้วเจอกันนะ ขอบคุณมากนะ"
             jump story2_3
+
     label story2_3:
         stop music fadeout 1.0
         scene black
