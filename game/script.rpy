@@ -203,7 +203,7 @@ label start:
         with dissolve
         girl1 "ไม่อยู่หรอ คิดว่าเป็นพวกติดห้องซะอีก"
         girl1 "งั้นลองสักหน่อยละกัน"
-        play sound "audio/breakdoor.ogg"
+        play sound "audio/breakdoor.mp3"
         with hpunch
         m "นี่เธอทำอะไรเนี่ยยยยยยยยยยย!!!"
         girl1 "ถ้าอยู่ก็เปิดประตูดีๆสิ ถ้าเกิดนายเป็นอะไรขึ้นมาจะทำยังไงละเนี่ย"
