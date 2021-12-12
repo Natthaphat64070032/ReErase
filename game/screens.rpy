@@ -919,7 +919,7 @@ screen history():
                     substitute False
 
         if not _history_list:
-            label _("The dialogue history is empty.")
+            label _("ไม่มีประวัติบทสนทนา")
 
 
 ## This determines what tags are allowed to be displayed on the history screen.
