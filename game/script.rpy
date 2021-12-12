@@ -707,6 +707,9 @@ label start:
         with dissolve
         "ขอบคุณจริงๆนะ"
         stop music fadeout 2.0
+        scene black
+        with fade
+        centered "Chapter: 0\nวันที่ 2\nโอกาสที่ย้อนกลับมา"
 
     label routetest:
         scene black
