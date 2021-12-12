@@ -16,7 +16,7 @@ default allfriend = friendshipg1 + friendshipm1
 
 label start:
 
-    play music "audio/Ideal and the Real.mp3"
+    play music "audio/Ideal and the Real.ogg"
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
@@ -45,7 +45,7 @@ label start:
     with fade
     mc "แต่… "
     mc "เธอไม่เหมือนเดิมอีกแล้ว"
-    play music "audio/Alleycat.mp3"
+    play music "audio/Alleycat.ogg"
     mc "จากเหตุการณ์นั้นเธอได้เป็นผู้เห็นเหตุการณ์ทั้งหมด เธอกลายเป็นคนจิตไม่สมประกอบ ไม่สามารถใช้ชีวิต หรือจดจำอะไรได้"
     mc "เธอเป็นผู้เคราะห์ร้ายจากเหตุการณ์ที่เหล่าโจรพวกนั้นได้ปล้นชีวิตครอบครัว และรวมถึงอนาคตของเธอ"
     mc "หลังจากนั้นผมจึงไปเยี่ยมเธอที่โรงพยาบาลเป็นประจำ..."
@@ -92,7 +92,7 @@ label start:
         "หวนคืนสู่จุดเริ่มต้น":
             jump start2
     label start2:
-        play music "audio/FirstMemory.mp3"
+        play music "audio/FirstMemory.ogg"
         mc "นี่นายนะ"
         mc "นั่นไม่ใช่ที่นั่งนายนะ ที่นั้งเรียงตามเลขที่บนกระดานแล้วนะ"
         "อะไรเนี่ย...?"
@@ -157,13 +157,13 @@ label start:
         "จริงๆไม่ได้เกลียดหรอกนะ แต่การได้เห็นเธอทุกวันมันเป็นการย้ำเตือนตัวผมเองมากกว่า"
         "ว่าจริงๆแล้วผมช่วยเธอไม่ได้"
         stop music fadeout 1.0
-        play sound "audio/knocking.mp3"
+        play sound "audio/knocking.ogg"
         mc "นี่! ยูกิอยู่รึเปล่า?"
         hide mc shirt sad at right
         show mc shirt at right
         "มินะ? มาทำไมกัน"
         girl1 "ไหนบอกว่าไม่สบายไง วันนี้ก็เลยลาเรียนแล้วซื้อของมาฝาก"
-        play music "audio/out of mere play.mp3"
+        play music "audio/out of mere play.ogg"
         "ยัยนั่นยุ่งไม่เข้าเรื่องอีกแล้ว"
         menu :
             "ทำอะไรดี"
@@ -203,7 +203,7 @@ label start:
         with dissolve
         girl1 "ไม่อยู่หรอ คิดว่าเป็นพวกติดห้องซะอีก"
         girl1 "งั้นลองสักหน่อยละกัน"
-        play sound "audio/breakdoor.mp3"
+        play sound "audio/breakdoor.ogg"
         with hpunch
         m "นี่เธอทำอะไรเนี่ยยยยยยยยยยย!!!"
         girl1 "ถ้าอยู่ก็เปิดประตูดีๆสิ ถ้าเกิดนายเป็นอะไรขึ้นมาจะทำยังไงละเนี่ย"
@@ -227,7 +227,7 @@ label start:
         girl1 "เพราะงั้นฉันที้่เป็นเพื่อนนายมาตั้งนาน ดูออกอยู่แล้ว จู่ๆคนอย่างนายจะออกจากโรงเรียนมาเฉยๆโดยไม่คิดอะไร"
         girl1 "ไม่ค่อยเหมือนนายที่ฉันรู้จักเลยนะ"
         stop music fadeout 1.0
-        play music "audio/Recollections.mp3"
+        play music "audio/Recollections.ogg"
         "ตัวผมนั้นคงไม่กล้าเล่าเรื่องที่เกิดขึ้นให้ฟังหรอก"
         scene black
         with fade
@@ -271,7 +271,7 @@ label start:
         scene black
         with fade
         centered "ระหว่างทาง"
-        play music "audio/New Days.mp3"
+        play music "audio/New Days.ogg"
         scene subway
         with dissolve
         girl1 "บังเอิญจังเลยนะ นี่ยูกิใช่ไหม"
@@ -372,7 +372,7 @@ label start:
         scene black
         with fade
         centered "พักกลางวัน"
-        play music "audio/Tsuiokunokakera.mp3"
+        play music "audio/Tsuiokunokakera.ogg"
         "หลังจากนี้การตัดสินใจการกระทำเราจะส่งผลแล้วสินะ"
         "เพราะที่ผ่านมาที่เราทำไป"
         "ก็เหมือนรอบที่ผ่านๆมา"
@@ -479,14 +479,14 @@ label start:
         centered "เลิกเรียน"
         scene bg old room
         with dissolve
-        play sound "audio/knocking.mp3"
+        play sound "audio/knocking.ogg"
         show satonaka warm smile2 at left
         with dissolve
         girl1 "รบกวนหน่อยนะ"
         show akechi smile at right
         with dissolve
         male1 "รบกวนหน่อยนะครับ"
-        play music "audio/Like a dream come true.mp3"
+        play music "audio/Like a dream come true.ogg"
         m "เดี๋ยวนะ ที่ไม่ได้บอกสถานที่ว่าที่ไหนก็เพราะงี้สินะ"
         male1 "ใช่เลยครับไหนๆก็จะมารบกวนทั้งทีแล้วก็ต้องเป็นห้องคุณทาคุโตะนี่แหละครับ"
         girl1 "เพื่อนมาห้องทั้งทีไม่เตรียมอาหารให้หน่อยหรอ"
@@ -533,7 +533,7 @@ label start:
         male1 "ถามไปคุณทาคุโตะคงเลี่ยงที่จะไม่ตอบเพราะงั้นเรามาเข้าเรื่องกันดีกว่าครับ"
         stop music fadeout 1.0
         male1 "คุณทาคุโตะ คุณไม่ใช่เด็กมัธยมปลายสินะครับ"
-        play music "audio/Reasoning.mp3"
+        play music "audio/Reasoning.ogg"
         girl1 "เอ๊ะ นี่คิตากาวะ นายไม่สบายตรงไหนรึเปล่า ที่เรามานี่ไม่ใช่ว่าเพราะเป็นห่วงหมอนี่หรอ"
         hide satonaka2 at left
         show satonaka warm sad2 at left
@@ -581,7 +581,7 @@ label start:
         male1 "เรื่องนั้นผมจะอธิบายให้ฟังเองละกันครับ"
         stop music fadeout 1.0
         male1 "การที่ให้คุณทาคุโตะเขาอธิบายด้วยตัวเองจะเป็นการทำร้ายเขาเกินไปครับ"
-        play music "audio/Freedom and Security.mp3" volume 0.6
+        play music "audio/Freedom and Security.ogg" volume 0.6
         scene bg lab
         with dissolve
         show akechi2 at left
@@ -615,7 +615,7 @@ label start:
         stop music fadeout 2.0
         scene bg old room
         with dissolve
-        play music "audio/Alleycat.mp3"
+        play music "audio/Alleycat.ogg"
         show akechi smile2 at left
         with dissolve
         male1 "แต่ไม่ต้องตกใจไปหรอกครับ เพราะผมเองก็พึ่งรู้ถึงพลังตัวเอง"
@@ -666,7 +666,7 @@ label start:
         with dissolve
         girl1 "หมอนั่นทิ้งไปแบบนี้เลยหรอ"
         girl1 "ถ้างั้นอธิบายมานะว่าเรื่องมันอะไรเนี่ย"
-        play music "audio/Tsuiokunokakera.mp3"
+        play music "audio/Tsuiokunokakera.ogg"
         girl1 "คิดว่าเป็นเรื่องธรรมดา ทำไมมันเกี่ยวข้องกับนาย หมอนั่น"
         girl1 "แล้วก็ยังพูดถึงเรื่องอนาคตของฉันอีก..."
         girl1 "ทั้งหมดที่ว่ามาเป็นเรื่องจริงงั้นหรอ..."
@@ -726,7 +726,7 @@ label start:
     #ENDING ROUTE PART 1
     label greenend:
         stop music fadeout 1.0
-        play music "audio/Hana no Uta.mp3" volume 0.6
+        play music "audio/Hana no Uta.ogg" volume 0.6
         scene black
         with fade
         "มันจบแล้ว"
@@ -752,7 +752,7 @@ label start:
 
     label blueend:
         stop music fadeout 1.0
-        play music "audio/Never More.mp3" volume 0.6
+        play music "audio/Never More.ogg" volume 0.6
         scene sky
         with dissolve
         "เรื่องราวทั้งหมดผมไม่รู้ว่าควรเป็นแบบนี้รึเปล่า"
@@ -782,7 +782,7 @@ label start:
 
     label brownend:
         stop music fadeout 1.0
-        play music "audio/Cage.mp3" volume 0.8
+        play music "audio/Cage.ogg" volume 0.8
         scene black
         with fade
         "เพราะอะไรถึงได้กลับมานะ"
